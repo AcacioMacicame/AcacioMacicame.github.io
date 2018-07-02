@@ -1,0 +1,36 @@
+{
+  "name": "currencyconverter",
+  "version": "1.0.0",
+  "homepage": "https://AcacioMacicame.github.io/currencyConverter",
+  "deploy": "npm run build&&gh-pages -d build",
+  "description": "This is the currency converter app that work online and offline using sevice worker,cache api and indexed db",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "scripts": {
+    "build:production": "node --version",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AcacioMacicame/currencyConverter.git"
+  },
+  "keywords": [
+    "Service-Worker",
+    "indexed-db",
+    "cache api",
+    "fetch api"
+  ],
+  "author": "Acacio Macicame",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AcacioMacicame/currencyConverter/issues"
+  }
+}
